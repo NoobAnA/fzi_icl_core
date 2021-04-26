@@ -182,7 +182,7 @@ void runPeriodicThread(const TimeSpan& period, size_t runs,
   }
 
   BOOST_REQUIRE(test_thread.hasRun());
-  BOOST_MESSAGE("max deviation=" << test_thread.maxDeviation().toNSec() << "ns" <<
+  BOOST_TEST_MESSAGE("max deviation=" << test_thread.maxDeviation().toNSec() << "ns" <<
                 ", accumulated deviation=" << test_thread.accumulatedDeviation().toNSec() << "ns" <<
                 ", mean deviation=" << test_thread.meanDeviation().toNSec() << "ns");
   BOOST_CHECK(test_thread.maxDeviation() < max_deviation);

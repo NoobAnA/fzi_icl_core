@@ -40,4 +40,4 @@ struct tGlobalFixture
   }
 };
 
-BOOST_GLOBAL_FIXTURE(tGlobalFixture)
+BOOST_GLOBAL_FIXTURE(tGlobalFixture);
